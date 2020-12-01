@@ -1,0 +1,23 @@
+{
+    "name": "khramtsov/mvc",
+    "description": "docker mvc",
+    "type": "project",
+    "license": "mit",
+    "authors": [
+        {
+            "name": "Oleh khramtsov",
+            "email": "olegking76@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        }
+    },
+    "minimum-stability": "stable",
+    "require": {
+        "harvesthq/chosen": "^1.8",
+        "components/jquery": "^3.5",
+        "robinherbots/jquery.inputmask": "^5.0"
+    }
+}

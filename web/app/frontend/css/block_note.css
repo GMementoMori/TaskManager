@@ -1,0 +1,139 @@
+/*bloks notes*/
+.remove-btn{
+	width: 25px !important;
+	height: 25px !important;
+}
+.remove-btn span{
+	font-size: 25px !important;
+	font-weight: bold;
+	color: white;
+	position: relative;
+	top: -8px;
+	text-align: center;
+	cursor: pointer;
+}
+.block-note{
+    background-color: #F8EBA7;
+	width: 20%;
+	height: 200px;
+	margin-left: 10px;
+	margin-top: 10px;
+	display: inline-grid;
+	opacity: 0;
+	padding: 2%;
+	box-shadow: 2px 6px rgba(32, 32, 32, 0.2);
+    
+}
+.conc-btn-0{
+	width: 15px;
+	height: 15px;
+	text-align: center;
+	margin-left: 45%;
+	border-radius: 50%;
+	border: 1px solid red;
+	background-color: red;
+	box-shadow: 2px 5px rgba(32, 32, 32, 0.4);
+}
+
+.note-title{
+	color: black;
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 30px;
+}
+.for-detail{
+	color: rgba(32, 32, 32, 0.5);
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+.block-note:hover{
+	box-shadow: 6px 11px rgba(32, 32, 32, 0.3);
+	margin-left: 13px;
+
+}
+.for-detail:hover{
+	color: rgba(32, 32, 32, 0.7);
+    font-size: 15.1px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.block-full-note{
+	display: none;
+	position: absolute;
+    background-color: #F8EBA7;
+	width: 40%;
+	height: 300px;
+	left: 30%;
+	top: 10%;
+	padding: 2%;
+	box-shadow: 2px 6px rgba(32, 32, 32, 0.2);
+	/*cursor: grab;*/
+    
+}
+
+.full-conc-btn-0{
+	width: 20px;
+	height: 20px;
+	display: block;
+	text-align: center;
+	margin-left: 48%;
+	border-radius: 50%;
+	border: 1px solid red;
+	background-color: red;
+	box-shadow: 2px 5px rgba(32, 32, 32, 0.4);
+}
+
+.full-note-title{
+	color: black;
+    margin-top: 20px;
+	margin-left: 20%;
+	width: 60%;
+	text-align: center;
+	background-color: #F8EBA7;
+	border: 0px solid #F8EBA7;
+	border-bottom: 1px solid grey;
+	font-family: sans-serif;
+	font-size: 30px;
+}
+.full-main-note-text{
+	color: black;
+    margin-top: 20px;
+    width: 98%;
+    height: 130px;    
+	text-align: left;
+	background-color: #F8EBA7;
+	border: 0px solid #F8EBA7;
+	font-family: sans-serif;
+	font-size: 17px;
+	resize: none;
+	overflow: hidden;
+}
+.full-btn-container{
+	width: 40%;
+}
+.bth-full-note{
+    background-color: #F8EBA7;
+	border: 0px solid #F8EBA7;
+	color: grey;
+	text-decoration: underline;
+	font-weight: bold;
+	font-family: sans-serif;
+	margin-top: 0%;
+	font-size: 15px;
+}
+.error-container{
+  width: 40%;
+  float: right;
+  margin-top: -5%;
+}
+.errors{
+	color: red;
+}
+.errors.main{
+	position: absolute;
+	top: -20px;
+	left: 45%;
+	font-size: 15px !important;
+	font-family: cursive;
+}

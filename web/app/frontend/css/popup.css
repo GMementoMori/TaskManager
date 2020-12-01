@@ -1,0 +1,35 @@
+.popup-delete{
+	background-color: #4E567E;
+	border:5px solid #92A7BA;
+	position: absolute;
+	top: 70px;
+    left: 35%;
+    width: 30%;
+    height: 130px;
+    display: none;
+}
+.container-buttons{
+	width: 100%;
+	position: relative;
+	top: 17%;
+}
+.popup-delete p{
+	color: white;
+	font-size: 20px;
+	text-align: center;
+	margin-top: 5px;
+	font-weight: bold;
+}
+
+.popup-delete button{
+    position: relative;
+}
+
+#no-delete{
+	float: left;
+	left: 5%;
+}
+#yes-delete{
+	float: right;
+	right: 5%;
+}

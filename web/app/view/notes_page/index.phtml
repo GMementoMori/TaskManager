@@ -1,0 +1,43 @@
+<html>
+<head>
+    <title>Notes</title> 
+    <meta charset="utf-8">
+
+    <link href='vendor/harvesthq/chosen/chosen.css' rel='stylesheet' type='text/css'>
+    <link href='app/frontend/css/notes.css' rel='stylesheet' type='text/css'>
+    <link href='app/frontend/css/notes.scss' rel='stylesheet' type='text/css'>
+    <link href='app/frontend/css/menu_buttons.css' rel='stylesheet' type='text/css'>
+    <link href='app/frontend/css/block_note.css' rel='stylesheet' type='text/css'>
+    <link href='app/frontend/css/popup.css' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="//brick.a.ssl.fastly.net/Roboto:400"/>
+    
+    <script type="text/javascript" src="vendor/components/jquery/jquery.js"></script>
+    <script type="text/javascript" src="vendor/harvesthq/chosen/chosen.jquery.js"></script>
+    <script type="text/javascript" src="vendor/robinherbots/jquery.inputmask/dist/jquery.inputmask.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@shopify/draggable@1.0.0-beta.12/lib/draggable.bundle.js"></script>
+</head>
+<body>
+
+    <?require "templates/menu_notes.phtml"?>
+
+    <main>
+        <span class="errors main"><?=$errors?></span>
+
+        <?foreach ($notes as $noteID => $noteValues):?>
+            <?require "templates/note.phtml"?>
+        <?endforeach?>
+    </main>
+
+    <?require "templates/full_block_note.phtml"?>
+
+    <?require "templates/popup_confirm.phtml"?>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="app/frontend/js/notes.js"></script>
+</body>
+</html>
+
